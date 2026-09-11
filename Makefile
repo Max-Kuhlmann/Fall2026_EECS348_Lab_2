@@ -1,5 +1,5 @@
 # This is a comment line
-CC=g++
+CC=gcc
 # CFLAGS will be the options passed to the compiler.
 CFLAGS=-c -Wall
 OBJECTS = main.o isOdd.o
@@ -12,4 +12,4 @@ prog: $(OBJECTS)
 	$(CC) $(CFLAGS) $<
 
 clean:
-	rm -rf *.o
+	rm -rf *.o prog
