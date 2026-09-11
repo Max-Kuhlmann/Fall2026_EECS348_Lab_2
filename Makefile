@@ -1,15 +1,15 @@
 # This is a comment line
 CC=g++
 # CFLAGS will be the options passed to the compiler.
-CFLAGS=-c –Wall
+CFLAGS=-c -Wall
 OBJECTS = main.o isOdd.o
 all: prog
 
 prog: $(OBJECTS)
-    $(CC) $(OBJECTS) -o prog
+	$(CC) $(OBJECTS) -o prog
 
 %.o: %.cpp
-    $(CC) $(CFLAGS) $<
+	$(CC) $(CFLAGS) $<
 
 clean:
-    rm -rf *.o
+	rm -rf *.o
